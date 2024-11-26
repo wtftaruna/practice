@@ -1,0 +1,30 @@
+//write a program to implement Linear Search
+#include<iostream>
+using namespace std;
+int main ()
+{
+	int array[100], search, c, n;
+	cout<<"Enter the elements of Array\n";
+	cin>>n;
+	cout<<"Enter integer\n";
+	for (c=0; c<n; c++)
+	{
+		cin>>array[c];
+	}
+	
+	cout<<"Enter number to search\n";
+	cin>>search;
+	for(c=0; c<n; c++)
+	{
+		if(array[c] == search)
+		{
+			cout<<search<<" is present at location "<<c+1;
+			break;
+		}
+	}
+	if (c == n)
+	{
+		cout<<search<<" is not present in array\n";
+	}
+	return 0;
+}
