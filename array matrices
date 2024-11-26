@@ -1,0 +1,25 @@
+#include<iostream>
+ using namespace std;
+ int main()
+ {
+ 	int a, b, arr[2][3];
+ 	for(a=0; a<2; a++)
+ 	{
+ 		for(b=0; b<3; b++)
+ 		{
+ 			cout<<"Enter a value ["<<a<<"]"<<"["<<b<<"]";
+ 			cin>>arr[a][b];
+		 }
+	 }
+	 
+	cout<<"\n\nPresenting the elements\n";
+	for(a=0; a<2; a++)
+	{
+		cout<<"\n";
+		for(b=0; b<3; b++)
+		{
+			cout<<"\t"<<arr[a][b];	
+		}
+	}
+	return 0;
+ }
